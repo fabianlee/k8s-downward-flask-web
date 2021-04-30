@@ -21,3 +21,5 @@ Image is based on python:3.9-slim-buster and is ~130Mb
 * docker-build (builds image)
 * docker-run-fg (runs container in foreground, ctrl-C to exit)
 * docker-run-bg (runs container in background)
+* k8s-apply (applies deployment to kubernetes cluster)
+* k8s-delete (removes deployment on kubernetes cluster)
