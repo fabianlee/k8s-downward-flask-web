@@ -14,7 +14,7 @@ MY_GITREF := $(shell git rev-parse --short HEAD)
 
 ## builds docker image
 docker-build:
-	echo MY_GITREF is $(MY_GITREF)
+	@echo MY_GITREF is $(MY_GITREF)
 	$(DOCKERCMD) build --build-arg MY_VERSION=$(VERSION) --build-arg MY_BUILDTIME=$(BUILD_TIME) -f Dockerfile -t $(OPV) .
 
 ## cleans docker image
